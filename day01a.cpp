@@ -12,8 +12,7 @@ int main() {
   ifstream numFile("aos22day1.txt"); 
   
   while(getline(numFile, myText)){
-    //cout << "myText: " << myText; 
-    if(myText != ""){ // was "\n"
+    if(myText != ""){ 
       myCal = stoi(myText);
       totalCal += myCal;
       
@@ -22,9 +21,7 @@ int main() {
         maxCal = totalCal;
       }
       totalCal = 0;
-      
     }
-  
   }
   cout << maxCal << endl;
 }
